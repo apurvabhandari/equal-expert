@@ -1,2 +1,2 @@
 # equal-expert
-Terraform to create infrastructure
+[Terraform to create infrastructure](/terraform)
