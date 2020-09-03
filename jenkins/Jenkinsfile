@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script {
                    
-                    sh "mkdir -p /mnt/artefact && mv target/*.jar /mnt/artefact"
+                    sh "mv target/*.jar /mnt/artefact"
                 }
             }
         }
