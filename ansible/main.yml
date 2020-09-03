@@ -1,0 +1,14 @@
+---
+- name: Run spring boot
+  gather_facts: false
+  hosts: all
+  
+  become: true
+  tasks:
+    - name: copy jar
+      copy:
+        src:  /mnt/artefact/*.jar
+        dest: /mnt/artefact/
+    
+    - name: run jar
+      shell: java -jar /mnt/artefact/*.jar
